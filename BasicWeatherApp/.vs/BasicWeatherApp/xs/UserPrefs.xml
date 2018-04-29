@@ -1,7 +1,13 @@
-﻿<Properties StartupConfiguration="{DD5553E4-5DFE-4E25-9BE4-A667E89D86BE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BasicWeatherApp/Models/WeatherData.cs">
+﻿<Properties StartupConfiguration="{DD5553E4-5DFE-4E25-9BE4-A667E89D86BE}|Default" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BasicWeatherApp/packages.config">
     <Files>
       <File FileName="BasicWeatherApp/Models/WeatherData.cs" Line="10" Column="47" />
+      <File FileName="BasicWeatherApp/Views/HomeView.xaml" Line="6" Column="1" />
+      <File FileName="BasicWeatherApp/Views/HomeView.xaml.cs" Line="16" Column="5" />
+      <File FileName="BasicWeatherApp/ViewModels/HomeViewModel.cs" Line="11" Column="1" />
+      <File FileName="BasicWeatherApp Status" />
+      <File FileName="BasicWeatherApp/App.cs" Line="1" Column="1" />
+      <File FileName="BasicWeatherApp/packages.config" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
