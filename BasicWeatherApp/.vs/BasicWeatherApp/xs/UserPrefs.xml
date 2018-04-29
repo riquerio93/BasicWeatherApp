@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{DD5553E4-5DFE-4E25-9BE4-A667E89D86BE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BasicWeatherApp/Models/WeatherData.cs">
+    <Files>
+      <File FileName="BasicWeatherApp/Models/WeatherData.cs" Line="10" Column="47" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.ItemProperties.Native_220Code.BasicWeatherApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.88418007-2119-4BC9-A672-56AD994A6B33">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.Native_220Code.BasicWeatherApp.iOS>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Shared_220Code.BasicWeatherApp FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Native_220Code.BasicWeatherApp.Droid FirstBuild="True" />
+</Properties>
