@@ -1,24 +1,19 @@
-﻿<Properties StartupConfiguration="{DD5553E4-5DFE-4E25-9BE4-A667E89D86BE}|Default" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BasicWeatherApp/packages.config">
+﻿<Properties StartupConfiguration="{92EF4102-B876-4ED3-ABEF-5F721851F25D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BasicWeatherApp/App.xaml.cs">
     <Files>
-      <File FileName="BasicWeatherApp/Models/WeatherData.cs" Line="10" Column="47" />
-      <File FileName="BasicWeatherApp/Views/HomeView.xaml" Line="6" Column="1" />
-      <File FileName="BasicWeatherApp/Views/HomeView.xaml.cs" Line="16" Column="5" />
-      <File FileName="BasicWeatherApp/ViewModels/HomeViewModel.cs" Line="11" Column="1" />
-      <File FileName="BasicWeatherApp Status" />
-      <File FileName="BasicWeatherApp/App.cs" Line="1" Column="1" />
-      <File FileName="BasicWeatherApp/packages.config" Line="1" Column="1" />
+      <File FileName="BasicWeatherApp/App.xaml" Line="7" Column="1" />
+      <File FileName="BasicWeatherApp/App.xaml.cs" Line="13" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.ItemProperties.Native_220Code.BasicWeatherApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.88418007-2119-4BC9-A672-56AD994A6B33">
-    <MonoDevelop.MacDev.AppleDevelopmentTeam />
-  </MonoDevelop.Ide.ItemProperties.Native_220Code.BasicWeatherApp.iOS>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.BasicWeatherApp.Droid FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Shared_220Code.BasicWeatherApp FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.BasicWeatherApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DA468B1A-64B7-445F-8613-4629D4C74D0D" FirstBuild="True">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.BasicWeatherApp.iOS>
+  <MonoDevelop.Ide.ItemProperties.BasicWeatherApp FirstBuild="True" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Native_220Code.BasicWeatherApp.Droid FirstBuild="True" />
 </Properties>
