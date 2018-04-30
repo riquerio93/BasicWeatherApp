@@ -1,4 +1,6 @@
-﻿using Xamarin.Forms;
+﻿using BasicWeatherApp.PageModels;
+using BasicWeatherApp.Pages;
+using Xamarin.Forms;
 
 namespace BasicWeatherApp
 {
@@ -8,7 +10,8 @@ namespace BasicWeatherApp
         {
             InitializeComponent();
 
-            MainPage = new BasicWeatherAppPage();
+            var pageModel = new MainPageModel();
+            MainPage = new NavigationPage(new MainPage(pageModel));
         }
 
         protected override void OnStart()
