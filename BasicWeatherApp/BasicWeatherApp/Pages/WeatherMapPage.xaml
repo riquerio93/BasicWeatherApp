@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<util:BasePage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:util="clr-namespace:BasicWeatherApp.Pages;assembly=BasicWeatherApp" 
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="BasicWeatherApp.Pages.WeatherMapPage">
+    <util:BasePage.BaseContent>
+         <StackLayout HeightRequest="600">
+             <maps:Map HeightRequest="500" WidthRequest="300" x:Name="WeatherMap">
+            </maps:Map>
+         </StackLayout>
+    </util:BasePage.BaseContent>
+</util:BasePage>

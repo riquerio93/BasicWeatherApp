@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BasicWeatherApp.Pages.MainPage">
-    <ContentPage.Content>
+<util:BasePage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:util="clr-namespace:BasicWeatherApp.Pages;assembly=BasicWeatherApp"
+             x:Class="BasicWeatherApp.Pages.MainPage">
+
+    <util:BasePage.BaseContent>
     <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Gray">
-    <Entry VerticalOptions="Center" HorizontalOptions="Center" Text="Enter a Zip Code" WidthRequest="100"/>
+    <Label HorizontalOptions="Center" Text="Enter a ZipCode"/>
+    <Entry x:Name="ZipCodeEntry" BackgroundColor="#c0c0c0" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="100" Completed="Handle_Completed"/>
     </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+    </util:BasePage.BaseContent>
+</util:BasePage>

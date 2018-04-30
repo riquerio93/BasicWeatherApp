@@ -11,7 +11,13 @@ namespace BasicWeatherApp
             InitializeComponent();
 
             var pageModel = new MainPageModel();
-            MainPage = new NavigationPage(new MainPage(pageModel));
+            MasterDetailPage masterPage = new MasterDetailPage
+            {
+                Master = new SlidePage(),
+                Detail = new NavigationPage(new MainPage(pageModel))
+        };
+            
+            MainPage = masterPage;
         }
 
         protected override void OnStart()

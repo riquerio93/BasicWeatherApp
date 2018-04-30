@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="BasicWeatherApp.Pages.BasePage">
+    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+        <StackLayout.Resources>
+            <ResourceDictionary>
+
+            </ResourceDictionary>
+        </StackLayout.Resources>
+    
+        <Grid>
+            <Grid.RowDefinitions>
+
+            </Grid.RowDefinitions>  
+            <Grid.ColumnDefinitions>
+
+            </Grid.ColumnDefinitions>
+
+    
+            <ContentView x:Name="BaseContentView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            </ContentView>
+        </Grid>
+    </StackLayout>
+</ContentPage>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace BasicWeatherApp.Services
 {
@@ -17,7 +18,8 @@ namespace BasicWeatherApp.Services
             
             if(response != null)
             {
-                return response;
+               var json = response.Content.ReadAsStringAsync().Result;
+               return JsonConvert.DeserializeObject(json);
             }
 
             return null;
