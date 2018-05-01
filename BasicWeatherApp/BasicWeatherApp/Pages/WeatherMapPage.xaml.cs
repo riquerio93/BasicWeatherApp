@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using BasicWeatherApp.Models;
 using BasicWeatherApp.PageModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
@@ -8,14 +9,15 @@ namespace BasicWeatherApp.Pages
 {
     public partial class WeatherMapPage : BasePage
     {
-        private WeatherMapPageModel parentModel;
+        private WeatherMapPageModel pageModel;
 
-        public WeatherMapPage(WeatherMapPageModel parentModel)
+        public WeatherMapPage(WeatherMapPageModel pageModel)
         {
             InitializeComponent();
-            this.parentModel = parentModel;
+            App.CurrentPage = "weathermap";
+            this.pageModel = pageModel;
 
-            Position zipPosition = new Position(Double.Parse(parentModel.Weather.Lat), Double.Parse(parentModel.Weather.Lon));
+            Position zipPosition = new Position(Double.Parse(pageModel.Weather.Lat), Double.Parse(pageModel.Weather.Lon));
             WeatherMap.MoveToRegion(
                 MapSpan.FromCenterAndRadius(zipPosition, Distance.FromMiles(0.3)));
 
@@ -23,8 +25,11 @@ namespace BasicWeatherApp.Pages
             {
                 Type = PinType.Place,
                 Position = zipPosition,
-                Label = " test",
-                Address = "test"
+                Label = "Temperature:Wind:Humidity:Visibility",
+                Address = pageModel.Weather.Temperature + ":" +
+                          pageModel.Weather.Wind + ":" +
+                          pageModel.Weather.Humidity + ":" +
+                          pageModel.Weather.Visibility
             };
 
             pin.Clicked += Pin_Clicked;
@@ -34,9 +39,18 @@ namespace BasicWeatherApp.Pages
             MapWeatherDataToUI();
         }
 
-        private void Pin_Clicked(object sender, EventArgs e)
+        private async void Pin_Clicked(object sender, EventArgs e)
         {
-           //Navigation.PushAsync();
+            var shouldFavorite = await DisplayAlert("Favorite", "Would you like to favorite this location?", "yes", "no");
+            
+            if(shouldFavorite)
+            {
+                var result = await App.Database.PostItemAsync(new FavoriteLocation(){
+                    Title = "FavoriteItem",
+                    Lat = pageModel.Weather.Lat,
+                    Lon = pageModel.Weather.Lon
+                });
+            }
         }
 
         public void MapWeatherDataToUI()

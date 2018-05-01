@@ -5,21 +5,13 @@
     <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
         <StackLayout.Resources>
             <ResourceDictionary>
-
+                <!-- add onIdioms and onPlatforms for phone/tablet and
+                android/iOS resource differences -->
             </ResourceDictionary>
         </StackLayout.Resources>
-    
-        <Grid>
-            <Grid.RowDefinitions>
-
-            </Grid.RowDefinitions>  
-            <Grid.ColumnDefinitions>
-
-            </Grid.ColumnDefinitions>
-
-    
+   
             <ContentView x:Name="BaseContentView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
             </ContentView>
-        </Grid>
+
     </StackLayout>
 </ContentPage>

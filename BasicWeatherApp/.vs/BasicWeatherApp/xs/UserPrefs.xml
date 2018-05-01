@@ -1,24 +1,24 @@
 ﻿<Properties StartupConfiguration="{92EF4102-B876-4ED3-ABEF-5F721851F25D}|Default" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BasicWeatherApp/App.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BasicWeatherApp Status">
     <Files>
-      <File FileName="BasicWeatherApp/App.xaml" Line="7" Column="1" />
-      <File FileName="BasicWeatherApp/App.xaml.cs" Line="8" Column="6" />
-      <File FileName="BasicWeatherApp/Pages/WeatherMapPage.xaml" Line="9" Column="83" />
-      <File FileName="BasicWeatherApp/PageModels/WeatherMapPageModel.cs" Line="18" Column="1" />
-      <File FileName="BasicWeatherApp/Pages/WeatherMapPage.xaml.cs" Line="32" Column="38" />
-      <File FileName="Droid/MainActivity.cs" Line="19" Column="41" />
-      <File FileName="iOS/AppDelegate.cs" Line="16" Column="38" />
-      <File FileName="iOS/Info.plist" />
-      <File FileName="BasicWeatherApp/Pages/MainPage.xaml.cs" Line="24" Column="1" />
-      <File FileName="BasicWeatherApp/Pages/SlidePage.xaml" Line="6" Column="1" />
-      <File FileName="BasicWeatherApp/Pages/SlidePage.xaml.cs" Line="14" Column="28" />
+      <File FileName="BasicWeatherApp/Models/FavoriteLocation.cs" Line="16" Column="26" />
+      <File FileName="BasicWeatherApp/App.xaml.cs" Line="9" Column="6" />
+      <File FileName="BasicWeatherApp/Pages/SlidePage.xaml.cs" Line="54" Column="1" />
+      <File FileName="BasicWeatherApp/Pages/SlidePage.xaml" Line="5" Column="100" />
+      <File FileName="BasicWeatherApp/Pages/WeatherMapPage.xaml.cs" Line="46" Column="1" />
+      <File FileName="BasicWeatherApp/obj/Debug/BasicWeatherApp.Pages.SlidePage.xaml.g.cs" Line="26" Column="1" />
+      <File FileName="BasicWeatherApp/Models/Favorites.cs" Line="9" Column="1" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="BasicWeatherApp Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/rorozco/Desktop/DesktopRepo/BasicWeatherApp/BasicWeatherApp/Pages/WeatherMapPage.xaml.cs" relfile="BasicWeatherApp/Pages/WeatherMapPage.xaml.cs" line="46" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.BasicWeatherApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DA468B1A-64B7-445F-8613-4629D4C74D0D" automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.BasicWeatherApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.88418007-2119-4BC9-A672-56AD994A6B33" automaticSigning="False" />
   <MultiItemStartupConfigurations />
 </Properties>

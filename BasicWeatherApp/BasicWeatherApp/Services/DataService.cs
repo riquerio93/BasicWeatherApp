@@ -11,7 +11,7 @@ namespace BasicWeatherApp.Services
         {
         }
 
-        public async Task<object> GetAsync(string queryUrl)
+        public async Task<object> GetFromEndpointAsync(string queryUrl)
         {
             HttpClient client = new HttpClient();
             var response = await client.GetAsync(queryUrl);

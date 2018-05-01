@@ -33,8 +33,8 @@ namespace BasicWeatherApp.PageModels
         {
            DataService service = new DataService();
            string key = "031cc353eaafe9f58dfeac13d7cbe31a";
-           string url = "http://api.openweathermap.org/data/2.5/weather?zip=" + ZipCode + ",us&appid=" + key + "&units=imperial"; 
-           dynamic response = await service.GetAsync(url);   
+           string url = "http://api.openweathermap.org/data/2.5/weather?zip=" + ZipCode + ",us&appid=" + key + "&units=imperial";
+           dynamic response = await service.GetFromEndpointAsync(url); 
             
            if(response != null)
            {

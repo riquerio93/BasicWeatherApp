@@ -5,6 +5,7 @@ namespace BasicWeatherApp.Services
 {
     public interface IDataService
     {
-        Task<object> GetAsync(string queryUrl); 
+        Task<object> GetFromEndpointAsync(string queryUrl); 
+        
     }
 }

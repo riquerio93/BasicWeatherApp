@@ -1,5 +1,43 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BasicWeatherApp.Pages.SlidePage">
     <ContentPage.Content>
+            
+     <!-- list view display is incorrect if you check the itemsource it is populating correctly -->
+     <ListView x:Name="FavList" ItemsSource="{Binding FavoritesList}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                <ViewCell.View>
+                    <Label Text="{Binding Favorites}" HeightRequest="30"/>
+                   </ViewCell.View>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+     </ListView>     
+     <!-- <StackLayout x:Name="WeatherDataLayout" IsVisible="false">
+      <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>  
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+      <Label Text="Temperature: " Grid.Row="0" Grid.Column="0"/>
+      <Label x:Name="TempLabel" Text="{Binding Weather.Temperature}" Grid.Row="0" Grid.Column="1"/>
+      <Label Text="Humidity: " Grid.Row="1" Grid.Column="0"/>
+      <Label x:Name="HumidityLabel" Text="{Binding Weather.Humidity}" Grid.Row="1" Grid.Column="1"/>
+      <Label Text="Wind: " Grid.Row="2" Grid.Column="0"/>
+      <Label x:Name="WindLabel" Text="{Binding Weather.Wind}" Grid.Row="2" Grid.Column="1"/>
+      <Label Text="Visibility: " Grid.Row="3" Grid.Column="0"/>
+      <Label x:Name="VisLabel" Text="{Binding Weather.Visibility}" Grid.Row="3" Grid.Column="1"/> 
+      
+      </Grid>
+            </StackLayout>    -->
     </ContentPage.Content>
 </ContentPage>

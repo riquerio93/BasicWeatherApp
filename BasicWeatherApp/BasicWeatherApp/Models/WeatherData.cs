@@ -10,5 +10,16 @@ namespace BasicWeatherApp.Models
         public string Temperature { get; set; }
         public string Wind { get; set; }
         public string Visibility { get; set; }
+        
+        public WeatherData()
+        {
+            Title = "";
+            Lat = "";
+            Lon = "";
+            Humidity = "";
+            Temperature = "";
+            Wind = "";
+            Visibility = "";
+        }
     }
 }
